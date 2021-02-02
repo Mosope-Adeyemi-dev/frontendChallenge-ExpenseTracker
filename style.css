@@ -1,18 +1,46 @@
 .expense-input-section{
     text-align:left; 
-    margin-top: 4%;
+    position: relative;
+    top: 70px;
+   width: 50%;
+   margin: auto;
+   background-color: whitesmoke;
+   padding: 20px;
+  
+
 }
+
 .app-title{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 8rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 100px;
     color: green;
+    
+    
 }
+
+@media(max-width:1024px){
+    .app-title{
+        font-size: 60px;
+        text-align: right;
+    }
+    .expense-input-section{
+       width: 95%;
+       top: 20px;
+    
+    }
+    
+    
+   
+}
+
+
+
 
 h3{
     margin-top: 2%;
 }
 table{
-     width: 60%;
+     width: 98%;
     margin: auto;  
 }
 td{
@@ -26,9 +54,9 @@ table, th, td, tfoot{
     border: 1px solid lightgrey;
 } 
 .table-bg{
-    height:auto;
-    background-color:#19456b;
-    width: 90%;
-    margin: 5% auto;
+    height:fit-content;
+    background-color:#084177;
+    width: 100%;
+    margin: 10% auto;
     padding-bottom: 40px;
 }

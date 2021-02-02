@@ -3,9 +3,17 @@ $("#addExpense").click(function (){
 level++;                                                             
 var transaction = $("#transaction").val();                            
 var amount = $("#amount").val();                                     
-var date = $("#date").val();                                         
+var date = $("#date").val();  
+if(transaction != null && transaction != ""){                                 
 $("#first-tr").after("<tr id="+"useToAddClass"+" class="+"items"+"><td>"+transaction+"</td><td>"+date+"</td><td>$"+amount+"</td><td><button onclick="+"deleteItem("+level+")"+">Delete</button></td></tr>");
 $("#useToAddClass").addClass("itemDelete"+level);                    
+$("#transaction").val("");                            
+$("#amount").val("");                                     
+$("#date").val(""); 
+}
+else{
+   alert("hey there, i think you forgot to input something.");
+}
 });
 
 

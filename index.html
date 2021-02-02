@@ -10,18 +10,20 @@
 </head>
 <body>
     
-<div class="expense-input-section container">
-    <h1 class="app-title">Expense Tracker</h1>
-    <h3>Add A New Item:</h3>
-
+<div class="expense-input-section">
+    
+    <h1 class="app-title container-fluid">Expense Tracker</h1>
+<br>    
+    <h5>Add A New Item:</h5>
     <label for="transaction"><b>Transaction:</b></label>
-      <input type="text" size="80" id="transaction" name="transaction" placeholder="Nature of transaction ?">
-<br>
-<br>
+      <input type="text" id="transaction" class="input-group" name="transaction" placeholder="Nature of transaction ?" size="50">
+
+    <br>
     <label for="amount" class="amount"><b>Amount:</b></label>    
-        <input type="number" name="amount" id="amount" >
-    <label for="date"> <b>Date:</b></label>
-        <input type="date"  name="date" id="date" >
+        <input type="number"  name="amount" class="input-group" id="amount">  
+    <br>        
+    <label for="date"> <b> Date:</b></label>
+        <input type="date" class="input-group" name="date" id="date" >
     <br>
     <br>
     <button class="btn btn-success" id="addExpense" >Add Expense</button>
@@ -43,6 +45,9 @@
 <br><br>
 </table>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="expense.js"></script>
 </body>
